@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+    <style>
+        *{
+            /* universal style */
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-color: cyan;
+        }
+        .container{
+            background: pink;
+            border: 5px solid purple;
+            /* we can set margin/padding for top, bottom, left and right like this */
+            /* padding-left: 20px;
+            padding-right: 20px;
+            padding-top: 20px;
+            padding-bottom: 20px; */
+
+            /*padding : 45px 67px 45px 67px;*/ /*padding/margin = top right bottom left */
+            padding: 34px 20px; /*padding :y(top/bottom) x(right/left)*/
+
+            /* margin: 25px; */
+            margin: 14px 20px;
+            border-radius: 20px;
+            width: 300px;
+    
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>This is my heading</h2>
+        <p id="first">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure magnam saepe, unde voluptate culpa quaerat deleniti ducimus soluta possimus voluptatem non repellendus ipsum inventore nam? Itaque sapiente id quis eligendi!
+        </p>
+    </div>
+
+    <div class="container">
+        <h2>This is my heading</h2>
+        <p id="second">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure magnam saepe, unde voluptate culpa quaerat deleniti ducimus soluta possimus voluptatem non repellendus ipsum inventore nam? Itaque sapiente id quis eligendi!
+        </p>
+    </div>
+
+    <div class="container">
+        <h2>This is my heading</h2>
+        <p id="third">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure magnam saepe, unde voluptate culpa quaerat deleniti ducimus soluta possimus voluptatem non repellendus ipsum inventore nam? Itaque sapiente id quis eligendi!
+        </p>
+    </div>
+</body>
+</html>

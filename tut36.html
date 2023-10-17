@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keyframes and AnimationsE</title>
+</head>
+<style>
+    .container{
+    /* display: flex; */
+    background-color: yellow;
+    }
+    .box{
+        width: 250px;
+        height: 250px;
+        background-color: aquamarine;
+        /* text-align: center; */
+        margin: auto;
+        position: relative;
+        /* animation-name: chandravir1; */
+        animation-name: chandravir2;
+        animation-duration: 10s;
+        animation-iteration-count: 5;
+        animation-fill-mode: forwards;
+        /* animation-timing-function: ease-in; */
+        /* animation-delay: 3s; */
+        /* animation-direction: reverse; */
+        /* animation-direction: alternate-reverse; */
+
+        /* these properties can be set using this shorthand */
+
+        /* animation: animation-name animation-duration animation-timing-function animation-delay animation-iteration-count animation-fill-mode */
+        /* animation: chandravir2 5s ease-in 1s 12 backwards; */
+
+    }
+    @keyframes chandravir1 {
+        from{
+            width: 100px;
+        }
+        to{
+            width: 1300px;
+        }
+    }
+    @keyframes chandravir2 {
+        0%{
+            top: 0px;
+            left: 0px;
+            right: 100px;
+        }
+        25%{
+            top: 0px;
+            left: -500px;
+        }
+        50%{
+            top: 0px;
+            right: 500px;
+        }
+        75%{
+            top: 0px;
+            left: 500px;
+        }
+        100%{
+            top: 0px;
+            left: 0px;
+        }
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="box">This is box</div>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alignment</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            font-family: cursive;
+        }
+        .container{
+            width: 900px;
+            border: 4px solid red;
+            background: lightblue;
+            margin: auto;
+
+        }
+        .item{
+            border: 3px solid pink;
+            margin: 12px 3px;
+            padding: 12px 3px;
+            background:yellowgreen; 
+        }
+        #fruits{
+            float: left;
+            width: 48%;
+            
+        }
+        #computer{
+            float: left;
+            width: 48%;
+        }
+        #stationary{
+            /* float: left; */
+            clear: left;
+            /* clear ka mtlb yeh h ki dono side se jo float ho rha h vo clear ho jayega */
+            /* clear: both; */
+            width: 100%;
+        }
+        p,h3{
+            /* text-align: center;
+            text-align: left;
+            text-align: right; */
+            text-align: justify;
+        }
+        h1{
+            margin: 25px auto;
+            width: 455px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to my Store</h1>
+        <div id="fruits" class="item">
+            <h3>Fruits</h3>
+            <p id="fruitsPara" class="para">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus accusamus rem, suscipit nobis aspernatur voluptatem consequatur corporis, commodi quidem temporibus possimus voluptatibus corrupti magnam eaque obcaecati adipisci autem. Debitis, sit?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, sequi!</p>
+        </div>
+
+        <div id="computer" class="item">
+            <h3>Computer</h3>
+            <p id="computerPara" class="para">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus accusamus rem, suscipit nobis aspernatur voluptatem consequatur corporis, commodi quidem temporibus possimus voluptatibus corrupti magnam eaque obcaecati adipisci autem. Debitis, sit?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi quisquam alias delectus atque maiores voluptatem saepe consectetur fuga deserunt qui?</p>
+        </div>
+
+        <div id="stationary" class="item">
+            <h3>Stationary</h3>
+            <p id="stationaryPara" class="para">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus accusamus rem, suscipit nobis aspernatur voluptatem consequatur corporis, commodi quidem temporibus possimus voluptatibus corrupti magnam eaque obcaecati adipisci autem. Debitis, sit?</p>
+        </div>
+
+        <div id="stationary" class="item">
+            <h3>Glasses</h3>
+            <p id="glassesPara" class="para">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus accusamus rem, suscipit nobis aspernatur voluptatem consequatur corporis, commodi quidem temporibus possimus voluptatibus corrupti magnam eaque obcaecati adipisci autem. Debitis, sit?</p>
+        </div>
+    </div>
+</body>
+</html>
